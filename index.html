@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <title>유흥 가격 비교 — 업종별·지역별 실제 차이를 데이터로 정리한 비교 가이드</title>
+    <meta name="description" content="셔츠룸부터 하이퍼블릭까지, 서울 유흥 업종의 가격 구조를 객관적으로 비교합니다. 구간별 차이와 조건별 선택 기준을 데이터 기반으로 정리한 편집형 블로그.">
+    <meta name="keywords" content="유흥 가격 비교, 셔츠룸 가격, 룸싸롱 가격, 텐프로 가격, 텐카페 가격, 쩜오 가격, 하이퍼블릭 가격, 풀싸롱 가격, 가라오케 가격, 노래방 가격, 비즈니스클럽 가격, 마사지 가격, 펍 가격, 서울 유흥">
+    <link rel="canonical" href="https://cityjot.shop/">
+    <meta property="og:title" content="유흥 가격 비교 — 업종별·지역별 실제 차이를 데이터로 정리한 비교 가이드">
+    <meta property="og:description" content="셀룸룸, 하이퍼블릭, 텐프로까지. 서울 주요 업종의 가격대를 객관적 수치로 비교합니다. 표와 구간별 분석으로 명확한 이해를 돕는 편집형 블로그.">
+    <meta property="og:url" content="https://cityjot.shop/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="유흥 가격 비교 — 업종별·지역별 실제 차이를 데이터로 정리한 비교 가이드">
+    <meta name="twitter:description" content="셀룸룸, 하이퍼스릭, 텐프로 등 서울 주요 유흥의 가격 비교. 객관적 데이터와 표정리로 명확한 이해를 제공합니다.">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "시티조트 — 유흥 가격 비교",
+            "url": "https://cityjot.shop/",
+            "author": {
+                "@type": "Person",
+                "name": "임동석"
+            },
+            "mainEntity": {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "셔츠룸과 룸싸롱의 가격 차이는 어느 정도인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "서울 기준으로 셔츠룸은 평균 30~50만원대, 룸싸롱은 60~100만원대에서 형성되는 경우가 많습니다. 이 차이는 운영 방식과 부대 서비스 구성에서 비롯되며, 같은 지역 내에서도 시간대에 따라 유동적입니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "초보자가 방문하기에 부담 없는 업종은 무엇인가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "가라오케나 노래방이 상대적으로 낮은 금액대로 시작할 수 있는 업종입니다. 1인 기준 3~10만원의 폭으로 책정되며, 대부분 시간제 요금이 명확하게 표기되어 있어 처음 방문자가 예산을 통제하기 수월합니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "지역별로 가격 차이가 정말 유의미한가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "강남과 강북, 마포와 용산 등 같은 업종이라도 입지에 따라 최대 40%까지 차이가 납니다. 임대료와 유동 인구 밀도가 직접적인 변수이며, 동일한 구성일수록 중심지가 높은 경향을 보입니다."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "비즈니스클럽은 어떤 상황에서 적절한가요?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "접대나 공식적인 미팅 목적일 경우 비즈니스클럽이 가장 적절합니다. 가격대는 80만원에서 150만원 사이로 폭이 넓으며, 예약제 운영으로 인해 방문 전 확인이 필수적입니다."
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
+    <style>
+        /* CSS Reset & Base */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-primary: #1a1a1a;
+            --color-secondary: #fafaf5;
+            --color-accent: #c5a880;
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+            --font-hand: 'Brush Script MT', 'Segoe Script', cursive;
+            --gap-standard: 48px;
+            --padding-standard: 72px;
+            --section-gap: 120px;
+            --max-width: 720px;
+        }
+
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+        }
+
+        body {
+            font-family: var(--font-serif);
+            line-height: 1.75;
+            letter-spacing: 0.02em;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a1a1a' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .r-top-nj9q {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 400;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--color-accent);
+            padding-bottom: 18px;
+            display: inline-block;
+            transform: rotate(-0.5deg);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.06em;
+        }
+
+        p {
+            margin-bottom: 1.4em;
+            color: #2a2a2a;
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--color-accent);
+            transition: opacity 0.2s;
+        }
+        a:hover {
+            opacity: 0.6;
+        }
+
+        /* Header */
+        .t-top-j6p3 {
+            padding: 28px 0;
+            border-bottom: 2px solid var(--color-primary);
+            margin-bottom: 80px;
+            position: sticky;
+            top: 0;
+            background: var(--color-secondary);
+            z-index: 50;
+            backdrop-filter: blur(8px);
+        }
+
+        .n-body-ei2e {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .k-item-7i5g {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border-bottom: none;
+            font-family: var(--font-serif);
+            color: var(--color-primary);
+        }
+
+        .n-head-n5uc {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+        }
+
+        .n-head-n5uc a {
+            border-bottom: none;
+            padding-bottom: 4px;
+            position: relative;
+        }
+
+        .n-head-n5uc a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--color-accent);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+            transform-origin: right;
+        }
+
+        .n-head-n5uc a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .r-txt-dn3v {
+            display: none;
+            background: none;
+            border: 1px solid var(--color-primary);
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            font-family: var(--font-serif);
+        }
+
+        /* Hero */
+        .r-side-eaio {
+            margin-bottom: var(--section-gap);
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(165deg, #fafaf5 30%, #e8e0d5 100%);
+            border: 1px solid #e0d8cc;
+            padding: 60px 40px;
+        }
+
+        .r-side-eaio::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            border: 1px solid var(--color-accent);
+            z-index: -1;
+            transform: rotate(1deg);
+        }
+
+        .r-side-eaio-content {
+            max-width: 600px;
+        }
+
+        .r-side-eaio-dropcap::first-letter {
+            font-size: 5.5rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 14px;
+            color: var(--color-primary);
+            font-weight: 700;
+        }
+
+        .r-side-eaio-sub {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            margin-bottom: 24px;
+            color: #5a5a5a;
+            font-family: var(--font-serif);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: var(--section-gap);
+        }
+
+        /* Editorial Table */
+        .x-side-j35u-wrap {
+            overflow-x: auto;
+            margin: 48px 0;
+            border-top: 2px solid var(--color-primary);
+            border-bottom: 1px solid var(--color-accent);
+            padding: 24px 0;
+        }
+
+        .x-side-j35u {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            letter-spacing: 0.03em;
+        }
+
+        .x-side-j35u th {
+            text-align: left;
+            padding: 14px 12px;
+            border-bottom: 1px solid var(--color-primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+        }
+
+        .x-side-j35u td {
+            padding: 14px 12px;
+            border-bottom: 1px dotted #ccc;
+            color: #2a2a2a;
+        }
+
+        .x-side-j35u tr:last-child td {
+            border-bottom: none;
+        }
+
+        .k-list-gdfs-row {
+            background: rgba(197, 168, 128, 0.08);
+        }
+
+        /* Category Grid (Asymetric) */
+        .k-img-btqs-grid {
+            display: grid;
+            grid-template-columns: 1fr 0.85fr 1.15fr;
+            gap: 28px;
+            margin: 48px 0;
+        }
+
+        .v-list-0lnw-item {
+            border-top: 2px solid var(--color-primary);
+            padding: 28px 0;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .v-list-0lnw-item:hover {
+            transform: translateY(-6px);
+        }
+
+        .v-list-0lnw-item:nth-child(2) {
+            margin-top: 40px;
+        }
+
+        .v-list-0lnw-item:nth-child(3) {
+            margin-top: -20px;
+        }
+
+        .v-list-0lnw-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #5a5a5a;
+            margin-bottom: 12px;
+        }
+
+        .v-list-0lnw-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        /* Search Bar */
+        .r-grid-x86p {
+            margin: 60px 0;
+            display: flex;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 14px;
+        }
+
+        .r-grid-x86p-input {
+            background: transparent;
+            border: none;
+            font-size: 1.4rem;
+            font-family: var(--font-serif);
+            width: 100%;
+            padding: 8px 0;
+            letter-spacing: 0.04em;
+            color: var(--color-primary);
+        }
+
+        .r-grid-x86p-input::placeholder {
+            color: #b0a99c;
+            font-style: italic;
+        }
+
+        .r-grid-x86p-input:focus {
+            outline: none;
+        }
+
+        .r-grid-x86p-btn {
+</body>
+</html>
