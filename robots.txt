@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cityjot.shop/sitemap.xml
+Sitemap: https://cityjot.shop/sitemap-index.xml
